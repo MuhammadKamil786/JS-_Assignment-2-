@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script Assignment</title>
 </head>
+  <style>
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: monospace;
+      font-size: 2em;
+      color: white;
+    }
+    .typewriter {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white; /* cursor */
+      width: 22ch; /* total characters including spaces */
+      animation: typing 3s steps(22) forwards, blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+  </style>
+</head>
 <body>
-    
+  <div class="typewriter">Java Script Assignment</div>
 </body>
 <script src="script.js"></script>
 </html>
